@@ -1,8 +1,0 @@
-	.data
-dato:	.word	1
-	.text
-	lw	$a1, dato
-loop:	beq	$a1, $a0, end
-	subi	$a1, $a1, 1
-	j 	loop
-end:	add	$a2, $a1, $a0
